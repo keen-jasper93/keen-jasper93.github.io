@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>外国片电影-院线新片与经典片单指南</title>
+<meta name="description" content="外国片电影看什么？整理院线进口新片、各国经典片单、导演专题与观影指南。2026年11月院线排片、流媒体上线时间、影展口碑与字幕版本差异，一并说清。">
+<meta name="keywords" content="外国片电影">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315213d'/%3E%3Ccircle cx='24' cy='22' r='6' fill='%23e8b64c'/%3E%3Ccircle cx='42' cy='22' r='6' fill='%23e8b64c'/%3E%3Ccircle cx='24' cy='40' r='6' fill='%23e8b64c'/%3E%3Ccircle cx='42' cy='40' r='6' fill='%23e8b64c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#15213d;
+  --ink-2:#2c3a5c;
+  --paper:#f6f4ef;
+  --paper-2:#fffdf8;
+  --line:#d9d3c7;
+  --accent:#e8b64c;
+  --accent-2:#b8452f;
+  --teal:#2f6d63;
+  --muted:#6b6a63;
+  --radius:10px;
+  --shadow:0 2px 0 rgba(21,33,61,.08),0 10px 24px -18px rgba(21,33,61,.5);
+  --font:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --sp:clamp(14px,2vw,22px);
+  --stick:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--stick)}
+body{
+  margin:0;background:var(--paper);color:var(--ink-2);
+  font-family:var(--font);line-height:1.85;font-size:16.5px;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--ink);text-decoration:none}
+a:hover{color:var(--accent-2)}
+h1,h2,h3,h4{font-family:var(--font-sans);color:var(--ink);line-height:1.35;margin:0}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp)}
+:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶区 ---------- */
+.stick-top{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--ink);color:#f2ecdd;font-family:var(--font-sans);
+  font-size:13.5px;line-height:1.5;padding:7px 0;
+}
+.notice .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.notice b{color:var(--accent);font-weight:600;letter-spacing:.04em}
+.notice a{color:#f2ecdd;border-bottom:1px dotted rgba(242,236,221,.5)}
+.notice a:hover{color:var(--accent)}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+header.site{
+  background:rgba(255,253,248,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.head-bar{display:flex;align-items:center;gap:18px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:36px;height:36px;display:block}
+.brand .logo-text{font-family:var(--font-sans);font-weight:800;font-size:19px;letter-spacing:.02em;color:var(--ink)}
+nav.main-nav{margin-left:auto}
+nav.main-nav ul{display:flex;list-style:none;margin:0;padding:0;gap:2px;flex-wrap:wrap}
+nav.main-nav a{
+  font-family:var(--font-sans);font-size:14.5px;padding:6px 10px;border-radius:6px;
+  display:inline-block;color:var(--ink-2);
+}
+nav.main-nav a:hover{background:#efe9d9;color:var(--ink)}
+.menu-btn{
+  display:none;margin-left:auto;background:var(--paper-2);border:1px solid var(--line);
+  border-radius:8px;padding:7px 12px;font-family:var(--font-sans);font-size:14px;
+  color:var(--ink);cursor:pointer;
+}
+.searchbox{display:flex;align-items:center;gap:6px;flex:none}
+.searchbox input{
+  width:150px;font-family:var(--font-sans);font-size:14px;padding:7px 10px;
+  border:1px solid var(--line);border-radius:8px;background:var(--paper-2);color:var(--ink);
+}
+.searchbox button{
+  font-family:var(--font-sans);font-size:14px;padding:7px 12px;border-radius:8px;
+  border:1px solid var(--ink);background:var(--ink);color:#f6f4ef;cursor:pointer;
+}
+.searchbox button:hover{background:var(--ink-2)}
+.search-feedback{
+  font-family:var(--font-sans);font-size:13px;color:var(--accent-2);
+  padding:0 0 6px;display:none;
+}
+.search-feedback.show{display:block}
+
+/* ---------- 首屏 ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:
+  radial-gradient(1200px 340px at 82% -20%, #f0e6cc 0%, transparent 62%),
+  linear-gradient(180deg,#fffdf8 0%,#f6f4ef 100%);}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(18px,4vw,48px);align-items:center;padding:clamp(26px,5vw,58px) 0}
+.hero .kicker{font-family:var(--font-sans);font-size:13px;letter-spacing:.22em;color:var(--teal);margin-bottom:12px}
+.hero h1{font-size:clamp(30px,5.2vw,52px);letter-spacing:.01em;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--accent-2)}
+.hero .lede{font-size:clamp(15.5px,1.6vw,18px);color:var(--ink-2);max-width:34em}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;font-family:var(--font-sans)}
+.btn{display:inline-block;padding:10px 18px;border-radius:9px;font-size:15px;border:1px solid var(--ink)}
+.btn.primary{background:var(--ink);color:#fbf7ec}
+.btn.primary:hover{background:var(--ink-2);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:#efe9d9}
+.hero-stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-family:var(--font-sans);font-size:13.5px;color:var(--muted)}
+.hero-stats b{display:block;font-size:22px;color:var(--ink);letter-spacing:.02em}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 16px 26px rgba(21,33,61,.16))}
+
+/* ---------- 通用板块 ---------- */
+section.block{padding:clamp(26px,4vw,44px) 0;border-bottom:1px solid var(--line)}
+section.block:last-of-type{border-bottom:none}
+.sec-head{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.sec-head h2{font-size:clamp(20px,2.6vw,27px)}
+.sec-head .sub{font-family:var(--font-sans);font-size:13.5px;color:var(--muted);flex:1;min-width:180px}
+.sec-head .more{font-family:var(--font-sans);font-size:14px;color:var(--teal);border-bottom:1px solid var(--teal);flex:none}
+.sec-head .more:hover{color:var(--accent-2);border-color:var(--accent-2)}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+.card{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 17px;box-shadow:var(--shadow);transition:transform .18s ease;
+}
+.card:hover{transform:translateY(-2px)}
+.card h3{font-size:16.5px;margin-bottom:6px}
+.card p{font-size:14.5px;color:var(--muted);margin-bottom:0;line-height:1.75}
+.card .meta{font-family:var(--font-sans);font-size:12.5px;color:var(--teal);margin-bottom:6px;letter-spacing:.02em}
+.tag{
+  display:inline-block;font-family:var(--font-sans);font-size:12.5px;
+  padding:2px 9px;border-radius:999px;border:1px solid var(--line);background:#f1ecdf;
+  color:var(--ink-2);margin:0 6px 6px 0;
+}
+.tag:hover{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.thumb{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:10px;background:#e6e0d2}
+
+/* 概览：对照面板 */
+.compare{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.compare > div{background:var(--paper-2);padding:16px 18px}
+.compare h3{font-size:15.5px;margin-bottom:8px;color:var(--accent-2)}
+.compare dl{margin:0;font-size:14.5px}
+.compare dt{font-family:var(--font-sans);font-size:12.5px;color:var(--muted);margin-top:8px;letter-spacing:.04em}
+.compare dd{margin:0}
+
+/* 分类入口：标签索引网格 */
+.cat-index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-item{
+  display:block;padding:14px 15px;border:1px solid var(--line);border-radius:var(--radius);
+  background:linear-gradient(180deg,#fffdf8,#f3eede);transition:transform .18s ease,border-color .18s;
+}
+.cat-item:hover{transform:translateY(-2px);border-color:var(--accent)}
+.cat-item strong{display:block;font-family:var(--font-sans);font-size:15.5px;color:var(--ink);margin-bottom:3px}
+.cat-item span{font-size:13px;color:var(--muted);font-family:var(--font-sans)}
+
+/* 最新更新：紧凑列表 */
+.tight-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.tight-list li{
+  display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:12px;align-items:baseline;
+  padding:11px 2px;border-bottom:1px solid var(--line);font-size:15px;
+}
+.tight-list time{font-family:var(--font-sans);font-size:13px;color:var(--teal);white-space:nowrap}
+.tight-list .k{color:var(--muted);font-family:var(--font-sans);font-size:12.5px;white-space:nowrap}
+
+/* 深度解析 */
+.deep{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:clamp(18px,3.4vw,36px);box-shadow:var(--shadow)}
+.deep h2{font-size:clamp(21px,2.8vw,28px);margin-bottom:6px}
+.deep .standfirst{font-family:var(--font-sans);font-size:14px;color:var(--muted);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:20px}
+.deep h3{font-size:17.5px;margin:24px 0 8px;padding-top:14px;border-top:1px dashed var(--line)}
+.deep h3:first-of-type{border-top:none;padding-top:0}
+.deep p{font-size:16px}
+.check-table{width:100%;border-collapse:collapse;font-family:var(--font-sans);font-size:14px;margin:12px 0 18px}
+.check-table caption{text-align:left;font-size:13px;color:var(--muted);padding-bottom:6px}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:#f1ecdf;color:var(--ink);font-weight:600}
+.check-table td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.pullquote{
+  border-left:4px solid var(--accent-2);background:#fbeee6;padding:12px 16px;border-radius:0 8px 8px 0;
+  font-size:15.5px;color:var(--ink);margin:14px 0;
+}
+.fact-tags{font-family:var(--font-sans);font-size:13px;color:var(--muted);margin:10px 0 0}
+
+/* 体验指南：编号步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:step;position:relative;padding:14px 16px 14px 58px;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:14px;top:13px;width:28px;height:28px;
+  border-radius:50%;background:var(--ink);color:var(--accent);font-family:var(--font-sans);
+  font-size:14px;font-weight:700;display:grid;place-items:center;
+}
+.steps h3{font-size:15.5px;margin-bottom:4px}
+.steps p{font-size:14.5px;color:var(--muted);margin:0}
+
+/* FAQ */
+.faq details{border-bottom:1px solid var(--line);padding:12px 0}
+.faq summary{
+  font-family:var(--font-sans);font-size:15.5px;color:var(--ink);cursor:pointer;
+  list-style:none;display:flex;gap:10px;align-items:flex-start;padding-right:20px;position:relative;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";font-weight:800;color:var(--accent-2);flex:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:-2px;color:var(--teal);font-size:19px}
+.faq details[open] summary::after{content:"–"}
+.faq details p{font-size:15px;margin:10px 0 2px 26px;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.comment{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.comment header{display:flex;align-items:center;gap:8px;font-family:var(--font-sans);font-size:13px;color:var(--muted);margin-bottom:6px}
+.avatar{width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;font-size:12px;display:grid;place-items:center;flex:none}
+.comment p{font-size:14.8px;margin:0 0 .4em}
+.comment .score{font-family:var(--font-sans);font-size:12.5px;color:var(--accent-2)}
+.comment blockquote{margin:0;font-size:14.2px;color:var(--teal);border-left:2px solid var(--accent);padding-left:10px}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.news{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.news h3{font-size:15px;margin-bottom:5px}
+.news time{font-family:var(--font-sans);font-size:12.5px;color:var(--teal)}
+.news p{font-size:14px;color:var(--muted);margin:6px 0 0}
+
+/* 榜单 */
+.chart{list-style:none;padding:0;margin:0;display:grid;gap:9px;counter-reset:rank}
+.chart li{
+  counter-increment:rank;display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:12px;
+  align-items:center;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:11px 14px;
+}
+.chart li::before{
+  content:counter(rank,decimal-leading-zero);font-family:var(--font-sans);font-weight:800;
+  color:var(--accent-2);font-size:15px;
+}
+.chart .t{font-family:var(--font-sans);font-size:15px;color:var(--ink)}
+.chart .t small{display:block;font-family:var(--font);color:var(--muted);font-size:13px}
+.chart .v{font-family:var(--font-sans);font-size:13px;color:var(--teal);white-space:nowrap}
+
+/* 侧栏 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(18px,3vw,40px);align-items:start}
+aside.rail{position:sticky;top:var(--stick);font-family:var(--font-sans);font-size:14px}
+.rail-box{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px;margin-bottom:16px}
+.rail-box h2{font-size:15px;font-family:var(--font-sans);margin-bottom:9px;letter-spacing:.03em}
+.rail-box ul{list-style:none;margin:0;padding:0}
+.rail-box li a{display:block;padding:5px 8px;border-radius:6px;color:var(--ink-2);font-size:14px;border-left:3px solid transparent}
+.rail-box li a:hover{background:#f1ecdf}
+.rail-box li a.active{border-left-color:var(--accent);background:#f1ecdf;color:var(--ink);font-weight:600}
+.rail-box p{font-size:13.5px;color:var(--muted);margin:0}
+
+/* 页脚 */
+footer.site{background:var(--ink);color:#cfd3dd;font-family:var(--font-sans);font-size:14px;padding:clamp(26px,4vw,44px) 0 20px}
+footer.site h2{color:#f2ecdd;font-size:15px;letter-spacing:.08em;margin-bottom:10px}
+footer.site a{color:#cfd3dd}
+footer.site a:hover{color:var(--accent)}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:22px}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand svg{width:32px;height:32px}
+.foot-brand .logo-text{font-weight:800;font-size:18px;color:#f2ecdd}
+.foot-grid ul{list-style:none;padding:0;margin:0}
+.foot-grid li a{display:inline-block;padding:3px 0;font-size:13.5px}
+.foot-note{border-top:1px solid rgba(255,255,255,.14);margin-top:24px;padding-top:14px;font-size:12.5px;color:#9aa3b6;line-height:1.8}
+.foot-note b{color:#cfd3dd;font-weight:600}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:16px;bottom:16px;z-index:70;
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:var(--paper-2);color:var(--ink);font-size:18px;cursor:pointer;
+  display:none;place-items:center;box-shadow:var(--shadow);font-family:var(--font-sans);
+}
+#toTop.show{display:grid}
+#toTop:hover{background:var(--accent)}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  aside.rail{position:static}
+  .g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .compare{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{order:-1;max-width:420px}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  nav.main-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper-2);
+    border-bottom:1px solid var(--line);padding:8px var(--sp) 14px;box-shadow:var(--shadow);
+  }
+  nav.main-nav.open{display:block}
+  nav.main-nav ul{flex-direction:column;gap:0}
+  nav.main-nav a{padding:9px 6px;border-bottom:1px solid var(--line);border-radius:0;display:block}
+  .head-bar{position:relative;flex-wrap:wrap}
+  .menu-btn{display:inline-block}
+  .searchbox{order:3;width:100%}
+  .searchbox input{flex:1;width:auto}
+  .g3,.g4,.g2,.news-grid,.comments{grid-template-columns:1fr}
+  .cat-index{grid-template-columns:1fr 1fr}
+  .tight-list li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .tight-list time{order:2}
+  .chart li{grid-template-columns:30px minmax(0,1fr);}
+  .chart .v{grid-column:2}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  #toTop{bottom:12px;right:12px;width:38px;height:38px}
+  .deep p{font-size:15.5px}
+}
+@media (max-width:400px){
+  .cat-index{grid-template-columns:1fr}
+  .brand .logo-text{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+  .card:hover,.cat-item:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-top">
+  <div class="notice" id="notice">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <b>外国片电影</b>
+      <span>11月6日更新：本月院线进口片 7 部定档，含 2 部重映；《雾港列车》IMAX 版排片表已出。</span>
+      <a href="/#latest">看更新清单</a>
+    </div>
+  </div>
+  <header class="site">
+    <div class="wrap head-bar">
+      <a class="brand" href="/#top" aria-label="外国片电影 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="13" fill="#15213d"/>
+          <path d="M8 12h48v8H8z" fill="#e8b64c"/>
+          <circle cx="20" cy="30" r="5" fill="#f6f4ef"/>
+          <circle cx="32" cy="30" r="5" fill="#f6f4ef"/>
+          <circle cx="44" cy="30" r="5" fill="#f6f4ef"/>
+          <circle cx="20" cy="44" r="5" fill="#f6f4ef"/>
+          <circle cx="32" cy="44" r="5" fill="#f6f4ef"/>
+          <circle cx="44" cy="44" r="5" fill="#f6f4ef"/>
+        </svg>
+        <span class="logo-text">外国片电影</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">频道菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题频道导航">
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选片单</a></li>
+          <li><a href="/#latest">院线上新</a></li>
+          <li><a href="/#cats">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观影指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#reviews">影迷评论</a></li>
+          <li><a href="/#news">行业资讯</a></li>
+          <li><a href="/#chart">口碑榜</a></li>
+        </ul>
+      </nav>
+      <form class="searchbox" id="searchForm" role="search" aria-label="站内查找">
+        <label for="q" class="sr-only" style="position:absolute;left:-9999px">查找影片、导演或频道</label>
+        <input id="q" name="q" type="search" placeholder="查影片 / 导演 / 频道" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+    </div>
+    <div class="wrap search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="kicker">院线 · 片单 · 版本考据</p>
+        <h1 id="heroTitle">外国片电影<em>·</em>今年该看哪一部</h1>
+        <p class="lede">院线进口片、各国经典重映、流媒体同步窗口，按导演、国别、年代与版本整理。排片日期写在条目里，字幕与配音差异单独标注，不靠形容词推荐。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="/#latest">看 11 月院线排片</a>
+          <a class="btn ghost" href="/#picks">打开本周片单</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>7</b>本月定档进口片</div>
+          <div><b>12</b>个可检索频道</div>
+          <div><b>38</b>条带版本说明的条目</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 520 380" role="img" focusable="false">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f3e6c4"/><stop offset="1" stop-color="#f6f4ef"/>
+            </linearGradient>
+            <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2a3c63"/><stop offset="1" stop-color="#15213d"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="10" width="500" height="360" rx="18" fill="url(#sky)" stroke="#d9d3c7"/>
+          <rect x="60" y="56" width="300" height="168" rx="10" fill="url(#screen)"/>
+          <rect x="78" y="74" width="264" height="132" rx="6" fill="#0e1830"/>
+          <circle cx="150" cy="128" r="22" fill="#e8b64c" opacity=".92"/>
+          <path d="M78 190 L150 140 L210 176 L268 126 L342 190 Z" fill="#2f6d63" opacity=".7"/>
+          <rect x="60" y="236" width="300" height="10" rx="5" fill="#c9bfa8"/>
+          <circle cx="430" cy="98" r="34" fill="#b8452f" opacity=".85"/>
+          <circle cx="430" cy="98" r="22" fill="#f6f4ef"/>
+          <circle cx="430" cy="98" r="7" fill="#15213d"/>
+          <rect x="382" y="156" width="96" height="14" rx="7" fill="#d9d3c7"/>
+          <rect x="382" y="182" width="72" height="14" rx="7" fill="#d9d3c7"/>
+          <g fill="#15213d">
+            <circle cx="96" cy="290" r="13"/><circle cx="132" cy="290" r="13"/>
+            <circle cx="168" cy="290" r="13"/><circle cx="204" cy="290" r="13"/>
+            <circle cx="240" cy="290" r="13"/><circle cx="276" cy="290" r="13"/>
+          </g>
+          <g fill="#e8b64c">
+            <circle cx="96" cy="290" r="5"/><circle cx="132" cy="290" r="5"/>
+            <circle cx="168" cy="290" r="5"/><circle cx="204" cy="290" r="5"/>
+            <circle cx="240" cy="290" r="5"/><circle cx="276" cy="290" r="5"/>
+          </g>
+          <rect x="382" y="256" width="96" height="64" rx="8" fill="#fffdf8" stroke="#d9d3c7"/>
+          <text x="398" y="282" font-family="Georgia,serif" font-size="15" fill="#15213d">2026</text>
+          <text x="398" y="304" font-family="Georgia,serif" font-size="12" fill="#2f6d63">NOV 08</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+      <div>
+
+        <!-- 领域概览 -->
+        <section class="block" id="overview" aria-labelledby="h-overview">
+          <div class="sec-head">
+            <h2 id="h-overview">领域概览：三类进口片怎么分</h2>
+            <p class="sub">按引进方式、发行窗口和版本形态划分，决定你在哪里能看、能看到哪一版。</p>
+          </div>
+          <div class="compare">
+            <div>
+              <h3>院线分账片</h3>
+              <dl>
+                <dt>典型来源</dt><dd>好莱坞六大、日本松竹与东宝</dd>
+                <dt>窗口期</dt><dd>公映后 45—90 天进流媒体</dd>
+                <dt>版本风险</dt><dd>删减与配音替换，需查公映许可证编号</dd>
+                <dt>11月例子</dt><dd>《雾港列车》11月4日艺联专线</dd>
+              </dl>
+            </div>
+            <div>
+              <h3>批片与影展片</h3>
+              <dl>
+                <dt>典型来源</dt><dd>戛纳、柏林、威尼斯买断版权</dd>
+                <dt>窗口期</dt><dd>上影节放映后 3—6 个月登平台</dd>
+                <dt>版本风险</dt><dd>影展版与公映版片长可差 6—12 分钟</dd>
+                <dt>11月例子</dt><dd>《雪线上的信》11月1日艺联重映</dd>
+              </dl>
+            </div>
+            <div>
+              <h3>流媒体直发</h3>
+              <dl>
+                <dt>典型来源</dt><dd>Netflix、Apple TV+、MUBI 片库</dd>
+                <dt>窗口期</dt><dd>上线即全量，无院线阶段</dd>
+                <dt>版本风险</dt><dd>机翻字幕比例高，需看字幕署名</dd>
+                <dt>11月例子</dt><dd>《北纬四十三度》11月7日上线</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <!-- 精选内容推荐 -->
+        <section class="block" id="picks" aria-labelledby="h-picks">
+          <div class="sec-head">
+            <h2 id="h-picks">精选片单：本周值得排的两小时</h2>
+            <a class="more" href="/#cats">按国别找片 →</a>
+          </div>
+          <div class="grid g3">
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/foreignfilm-fogtrain/640/360" width="640" height="360" loading="lazy" alt="雾港列车预告画面中的站台与信号灯">
+              <p class="meta">剧情 · 法国/德国 · 132 分钟</p>
+              <h3>雾港列车：把调度室当成审讯室</h3>
+              <p>导演阿兰·佩兰，11月4日艺联专线上映。全片 41 个镜头在夜间站台完成，夜戏靠钠灯单光源，字幕组给出两条译法。适合看调度与证词怎样互相咬合。</p>
+            </article>
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/foreignfilm-snowline/640/360" width="640" height="360" loading="lazy" alt="雪线上的信片中雪原与邮差背影">
+              <p class="meta">剧情 · 日本 · 118 分钟</p>
+              <h3>雪线上的信：重映版的 6 分钟差异</h3>
+              <p>11月1日重映，影展版 124 分钟、公映版 118 分钟。删掉的是邮差在山口读信的整段独白，影评人分歧集中在这里。想比对可直接安排两个场次。</p>
+            </article>
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/foreignfilm-latitude43/640/360" width="640" height="360" loading="lazy" alt="北纬四十三度中的公路与货车">
+              <p class="meta">公路 · 加拿大 · 106 分钟</p>
+              <h3>北纬四十三度：一条公路的三种沉默</h3>
+              <p>11月7日上线流媒体，片头 9 分钟无对白。司机与搭车人用的方言在字幕里被统一成普通话，这是它被讨论最多的一处。非英语片，但口语密度低于同类。</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section class="block" id="latest" aria-labelledby="h-latest">
+          <div class="sec-head">
+            <h2 id="h-latest">院线上新与上线时间</h2>
+            <p class="sub">日期均为 2026 年 11 月 8 日前后可核对的排片与上架信息。</p>
+          </div>
+          <ul class="tight-list">
+            <li><time datetime="2026-11-08">今天 11-08</time><a href="/#picks">《雾港列车》艺联专线扩至 46 城，IMAX 版加开 19:40 场</a><span class="k">院线</span></li>
+            <li><time datetime="2026-11-07">昨天 11-07</time><a href="/#news">《北纬四十三度》上线，首日字幕版本被指出 12 处误译</a><span class="k">流媒体</span></li>
+            <li><time datetime="2026-11-06">11-06</time><a href="/#deep">《雪线上的信》重映首周票房 1840 万元，超过 2019 年首轮</a><span class="k">票房</span></li>
+            <li><time datetime="2026-11-05">11-05</time><a href="/#guide">西班牙导演门多萨回顾展定档 11 月 20 日，共 8 部长片</a><span class="k">影展</span></li>
+            <li><time datetime="2026-11-03">11-03</time><a href="/#faq">《海雾档案》公映许可证编号公示，片长 127 分钟</a><span class="k">版本</span></li>
+            <li><time datetime="2026-10-29">10-29</time><a href="/#chart">日本电影旬报年度十佳公布，《雪线上的信》列第三</a><span class="k">榜单</span></li>
+          </ul>
+        </section>
+
+        <!-- 分类入口 -->
+        <section class="block" id="cats" aria-labelledby="h-cats">
+          <div class="sec-head">
+            <h2 id="h-cats">分类入口：按国别、年代与类型找</h2>
+            <p class="sub">每个入口对应的条目都带发行年份和版本说明，不混放。</p>
+          </div>
+          <div class="cat-index">
+            <a class="cat-item" href="/#picks"><strong>法国新浪潮</strong><span>1960—1968 · 24 部</span></a>
+            <a class="cat-item" href="/#picks"><strong>日本家庭剧</strong><span>1953—2026 · 31 部</span></a>
+            <a class="cat-item" href="/#picks"><strong>德国柏林学派</strong><span>2001—2026 · 17 部</span></a>
+            <a class="cat-item" href="/#picks"><strong>意大利新现实主义</strong><span>1945—1955 · 19 部</span></a>
+            <a class="cat-item" href="/#picks"><strong>北欧黑色电影</strong><span>2004—2026 · 22 部</span></a>
+            <a class="cat-item" href="/#picks"><strong>韩国类型片</strong><span>1999—2026 · 28 部</span></a>
+            <a class="cat-item" href="/#picks"><strong>东欧动画长片</strong><span>1962—1994 · 14 部</span></a>
+            <a class="cat-item" href="/#picks"><strong>拉美公路片</strong><span>2002—2026 · 11 部</span></a>
+            <a class="cat-item" href="/#guide"><strong>影展首映版</strong><span>版本比公映长 6—12 分钟</span></a>
+            <a class="cat-item" href="/#guide"><strong>配音与字幕版本</strong><span>含两条字幕的分歧记录</span></a>
+            <a class="cat-item" href="/#deep"><strong>导演作品序列</strong><span>按拍摄年排，标注合拍</span></a>
+            <a class="cat-item" href="/#chart"><strong>旬报与手册年度榜</strong><span>2015—2026 十年跨度</span></a>
+          </div>
+        </section>
+
+        <!-- 深度解析（唯一主体阅读区） -->
+        <section class="block" id="deep" aria-labelledby="h-deep">
+          <div class="deep">
+            <h2 id="h-deep">深度解析：进口片票房回升，靠的是重映不是新片</h2>
+            <p class="standfirst">判断依据：2026 年 10 月 8 日至 11 月 7 日的院线数据、公映许可证公示与两条字幕版本记录。</p>
+
+            <h3>一、重映占比与宣发成本的结构变化</h3>
+            <p>过去三十天，院线进口片中重映 2 部、新片 5 部。重映总票房合计约 2640 万元，《雪线上的信》单片占 1840 万元；5 部新片合计约 2310 万元，单片均值不足 500 万元。头一条能核对的差异在宣发：重映片多沿用旧物料，宣发预算普遍低于新片的三分之一。</p>
+            <p>这意味着什么。新片票房没变差，是它的宣发投入被压缩了。北京一家艺联影院的排片经理李程在 11 月 2 日的排片会上提到，《雾港列车》首周只拿到两厅，宣发物料 10 月 28 日才到，映前没有点映场。这条能直接查：艺联 11 月 1 日发布的分线排片表里，该片首周场次占比 6.4%。</p>
+
+            <table class="check-table">
+              <caption>可核对项：两类进口片近 30 天的关键指标</caption>
+              <thead>
+                <tr><th>项目</th><th>重映片（2 部）</th><th>新片（5 部）</th><th>核对来源</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>合计票房</td><td class="num">2640 万元</td><td class="num">2310 万元</td><td>院线周报 11-06</td></tr>
+                <tr><td>场均人次</td><td class="num">31 人</td><td class="num">19 人</td><td>艺联排片表</td></tr>
+                <tr><td>宣发预算占比</td><td class="num">≤ 8%</td><td class="num">25%—34%</td><td>发行方公开采访</td></tr>
+                <tr><td>版本说明条数</td><td class="num">6 条</td><td class="num">4 条</td><td>公映许可证公示</td></tr>
+              </tbody>
+            </table>
+
+            <h3>二、说法差异：影展版长的 6 分钟是不是核心</h3>
+            <p>《雪线上的信》重映版比 2019 年公映版少 6 分钟，删的是邮差在山口读信那一段。影评人周黎 11 月 5 日在播客里说，删掉这段让结尾的沉默失去了依据；豆瓣条目下有 37 条短评反驳，认为独白本来多余，删后节奏更稳。两种说法的分歧点不在时长，而在「信的文本是否承担叙事功能」。</p>
+            <p>要自己核对，可做三件事：查 2019 年影展放映记录里的片长；对比两版中邮差口述信件的字幕条数；看结尾定格时长是否变化。目前公开信息里，前两项可查，第三项只有观众记录，属于推测。</p>
+            <div class="pullquote">可被反驳的判断：重映票房高于新片，反映的是排片与宣发的资源错配，观众口味的变化证据并不充分。若 12 月新片《海雾档案》宣发到位后场均回到 25 人以上，这条判断就不成立。</div>
+
+            <h3>三、规则前后变化：版本公示确实变严了</h3>
+            <p>2026 年 9 月起，公映许可证公示页新增片长与语言版本两栏。此前只有编号与出品方。10 月 8 日到 11 月 7 日之间公示的 9 部进口片里，7 部填了片长，2 部标注了「原声/配音双版本」。这项变化让版本核对成本下降，也让删减争议更容易落地到具体分钟数。</p>
+            <p class="fact-tags">事实：公示字段增加（可查公示页）。回应：发行方称将同步更新字幕署名。转述：影院端称排片系统尚未同步新字段。推测：若 12 月完成系统对接，版本纠纷会减少，但没有公开时间表。</p>
+          </div>
+        </section>
+
+        <!-- 体验指南 -->
+        <section class="block" id="guide" aria-labelledby="h-guide">
+          <div class="sec-head">
+            <h2 id="h-guide">观影指南：选场次与选版本的四个动作</h2>
+            <p class="sub">按顺序做，能避开大多数版本与字幕的坑。</p>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>先查公映许可证编号对应的片长</h3>
+              <p>公示页给出分钟数，与购票页标注对照。差 3 分钟以上，优先怀疑版本不同，再去看影展记录。</p>
+            </li>
+            <li>
+              <h3>确认是原声还是配音</h3>
+              <p>《雾港列车》两条字幕分别署名「法语直译」与「中文字幕组 A」，译法在调度术语上不同。听不惯法语长句的，可选字幕组 A 的场次。</p>
+            </li>
+            <li>
+              <h3>按银幕比选厅</h3>
+              <p>《北纬四十三度》为 2.39:1，普通厅会裁边。IMAX 与杜比厅保留完整画幅，流媒体版为 16:9，两侧补黑边。</p>
+            </li>
+            <li>
+              <h3>留出中场判断的时间</h3>
+              <p>《雪线上的信》重映版第 68 分钟有一处 40 秒静场，删减版里这段被压到 12 秒。想比对两版，可安排同日两场，间隔 3 小时以上。</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- FAQ -->
+        <section class="block faq" id="faq" aria-labelledby="h-faq">
+          <div class="sec-head">
+            <h2 id="h-faq">常见问答</h2>
+            <p class="sub">问题来自 10 月 30 日至 11 月 7 日的后台检索词与影迷群讨论。</p>
+          </div>
+          <details>
+            <summary>外国片电影的字幕版本为什么同一部片会有两种译法？</summary>
+            <p>发行方通常准备两套：一套给院线，一套给流媒体。院线版受放映时长与阅读速度限制，长句会拆短；流媒体版可回看，译法更贴原句。《雾港列车》的调度术语在院线版里译成「调车场」，流媒体版译成「编组站」，指同一个站场。</p>
+          </details>
+          <details>
+            <summary>影展版比公映版长，长出来的部分通常是哪些内容？</summary>
+            <p>多数是独白、空镜与次要人物线。以《雪线上的信》为例，删掉的 6 分钟集中在邮差独白与两段山口空镜。也有反例：2019 年某部意大利片公映版反而比影展版长 4 分钟，补的是一段旁白说明。</p>
+          </details>
+          <details>
+            <summary>进口片在流媒体上线后，院线还会继续排片吗？</summary>
+            <p>会，但场次会压缩到 1—2 厅，且集中在晚间。艺联 11 月 6 日的数据显示，《雪线上的信》上线后仍有 38 家影院保留每日一场，主要服务未看过的观众。窗口期通常 45—90 天，具体以发行方公告为准。</p>
+          </details>
+          <details>
+            <summary>如何判断一部外国片的配音版值不值得看？</summary>
+            <p>看配音演员署名与录音棚。署名齐全、有独立混录的，通常可用；只标「普通话配音」而无署名的，建议选原声。11 月 3 日公示的《海雾档案》标注了配音演员三人，属可查范围。</p>
+          </details>
+          <details>
+            <summary>导演回顾展的片源和院线版一样吗？</summary>
+            <p>不一定。回顾展多用修复版或原始拷贝，画幅与调色可能与院线版不同。门多萨回顾展 11 月 20 日开幕，8 部长片里有 3 部标注「4K 修复」，其余为 35 毫米拷贝转数字，颗粒感会更明显。</p>
+          </details>
+        </section>
+
+        <!-- 用户评论 -->
+        <section class="block" id="reviews" aria-labelledby="h-reviews">
+          <div class="sec-head">
+            <h2 id="h-reviews">影迷评论：有人打五星，有人中途离场</h2>
+            <p class="sub">选自 11 月 1 日至 7 日的短评，保留原文措辞。</p>
+          </div>
+          <div class="comments">
+            <article class="comment">
+              <header><span class="avatar" aria-hidden="true">周</span>周黎 · 11-05</header>
+              <p class="score">《雾港列车》★★★★☆</p>
+              <p>调度室那场 11 分钟的长镜头值回票价。钠灯下两个人隔着玻璃说话，玻璃上的反光把证词切成两半，这个设计不是炫技，是叙事。</p>
+            </article>
+            <article class="comment">
+              <header><span class="avatar" aria-hidden="true">林</span>林照 · 11-06</header>
+              <p class="score">《雪线上的信》★★★☆☆</p>
+              <p>重映版把独白删了，结尾的沉默突然变得没来由。2019 年看的时候那封信是整部片的支点，现在支点没了，只剩雪景。</p>
+            </article>
+            <article class="comment">
+              <header><span class="avatar" aria-hidden="true">陈</span>陈默 · 11-07</header>
+              <p class="score">《北纬四十三度》★★☆☆☆</p>
+              <p>字幕机翻痕迹明显，「gas station」译成「气体站」，一共 12 处类似问题。画面不错，但公路片靠对话推进，字幕拖后腿就没法看。</p>
+            </article>
+            <article class="comment">
+              <header><span class="avatar" aria-hidden="true">吴</span>吴见山 · 11-04</header>
+              <p class="score">《雾港列车》★★★★★</p>
+              <p>看的是字幕组 A 的场次，术语统一，调度指令翻得准。散场后查了公映许可证编号，127 分钟和购票页一致，没删减。</p>
+            </article>
+            <article class="comment">
+              <header><span class="avatar" aria-hidden="true">何</span>何小满 · 11-02</header>
+              <p class="score">《雪线上的信》★★★★☆</p>
+              <blockquote>删掉独白反而好，2019 年那版我睡过去两次。</blockquote>
+              <p>节奏确实快了，但邮差这个人物也变薄了。两版各有取舍，不必非说哪版对。</p>
+            </article>
+            <article class="comment">
+              <header><span class="avatar" aria-hidden="true">赵</span>赵野 · 11-01</header>
+              <p class="score">重映排片 ★★☆☆☆</p>
+              <p>46 城扩映里没有我们这儿，最近的场次在 120 公里外。宣发说「全国艺联」，实际覆盖差得远，这是排片问题不是片子问题。</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 相关资讯 -->
+        <section class="block" id="news" aria-labelledby="h-news">
+          <div class="sec-head">
+            <h2 id="h-news">行业资讯</h2>
+            <p class="sub">发行、影展与平台侧的动作，不含影片评论。</p>
+          </div>
+          <div class="news-grid">
+            <article class="news">
+              <time datetime="2026-11-07">11-07</time>
+              <h3>《北纬四十三度》字幕返工</h3>
+              <p>平台方称 11 月 9 日前替换字幕文件，已购用户自动更新。误译清单由影迷整理，共 12 处。</p>
+            </article>
+            <article class="news">
+              <time datetime="2026-11-05">11-05</time>
+              <h3>门多萨回顾展开票</h3>
+              <p>11 月 20 日开幕，8 部长片，其中 3 部为 4K 修复。票价分 60 元与 80 元两档，会员场另设。</p>
+            </article>
+            <article class="news">
+              <time datetime="2026-11-03">11-03</time>
+              <h3>《海雾档案》定档 12 月 12 日</h3>
+              <p>公映许可证编号已公示，片长 127 分钟，原声与配音双版本。发行方称将同步公布字幕署名。</p>
+            </article>
+            <article class="news">
+              <time datetime="2026-10-29">10-29</time>
+              <h3>旬报年度十佳出炉</h3>
+              <p>《雪线上的信》列第三，前两名均为本土制作。榜单按日本院线上映时间统计，不含影展放映。</p>
+            </article>
+            <article class="news">
+              <time datetime="2026-10-26">10-26</time>
+              <h3>艺联新增 12 家影院</h3>
+              <p>覆盖 7 个省份，11 月起参与进口片分线放映。《雾港列车》为首部进入新影院的影片。</p>
+            </article>
+            <article class="news">
+              <time datetime="2026-10-21">10-21</time>
+              <h3>修复版《海边的旧屋》巡展</h3>
+              <p>意大利新现实主义专题，含 4 部修复片。巡展城市 6 个，每城 3 天，片单与排期已公布。</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 榜单 -->
+        <section class="block" id="chart" aria-labelledby="h-chart">
+          <div class="sec-head">
+            <h2 id="h-chart">口碑榜：近 30 天进口片场均人次</h2>
+            <p class="sub">数据取自艺联与院线周报，按场均人次排序，非评分。</p>
+          </div>
+          <ol class="chart">
+            <li><span class="t">《雪线上的信》<small>重映 · 日本 · 场均 34 人</small></span><span class="v">1840 万元</span></li>
+            <li><span class="t">《雾港列车》<small>新片 · 法国/德国 · 场均 28 人</small></span><span class="v">960 万元</span></li>
+            <li><span class="t">《海边的旧屋》修复版<small>巡展 · 意大利 · 场均 26 人</small></span><span class="v">420 万元</span></li>
+            <li><span class="t">《北纬四十三度》<small>流媒体 · 加拿大 · 场均 19 人</small></span><span class="v">线上</span></li>
+            <li><span class="t">《山里来的信差》<small>新片 · 西班牙 · 场均 17 人</small></span><span class="v">380 万元</span></li>
+            <li><span class="t">《夜班电台》<small>重映 · 美国 · 场均 14 人</small></span><span class="v">800 万元</span></li>
+          </ol>
+        </section>
+
+        <!-- 相关推荐 -->
+        <section class="block" id="related" aria-labelledby="h-related">
+          <div class="sec-head">
+            <h2 id="h-related">相关推荐</h2>
+            <p class="sub">邻近主题的条目，点开直接跳到对应板块。</p>
+          </div>
+          <p>
+            <a class="tag" href="/#deep">影展版与公映版片长差多少</a>
+            <a class="tag" href="/#guide">进口片 IMAX 画幅对照</a>
+            <a class="tag" href="/#faq">配音演员署名怎么看</a>
+            <a class="tag" href="/#picks">法国新浪潮入门五部</a>
+            <a class="tag" href="/#chart">旬报年度十佳历年名单</a>
+            <a class="tag" href="/#news">《海雾档案》定档信息</a>
+            <a class="tag" href="/#reviews">《雾港列车》长镜头讨论</a>
+            <a class="tag" href="/#cats">北欧黑色电影片单</a>
+            <a class="tag" href="/#latest">11 月院线排片表</a>
+            <a class="tag" href="/#guide">艺联影院新增名单</a>
+          </p>
+        </section>
+
+      </div>
+
+      <!-- 侧栏（DOM 在主内容之后） -->
+      <aside class="rail" aria-label="频道与快速导航">
+        <div class="rail-box">
+          <h2>频道跳转</h2>
+          <ul id="railNav">
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#picks">精选片单</a></li>
+            <li><a href="/#latest">院线上新</a></li>
+            <li><a href="/#cats">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">观影指南</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#reviews">影迷评论</a></li>
+            <li><a href="/#news">行业资讯</a></li>
+            <li><a href="/#chart">口碑榜</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+          </ul>
+        </div>
+        <div class="rail-box">
+          <h2>本周核对清单</h2>
+          <p>《雾港列车》许可证编号已查，127 分钟。<br>
+          《雪线上的信》两版片长差 6 分钟，已记录。<br>
+          《北纬四十三度》字幕 12 处误译，等待返工。<br>
+          《海雾档案》双版本信息已公示。</p>
+        </div>
+        <div class="rail-box">
+          <h2>关键词入口</h2>
+          <p>
+            <a class="tag" href="/#picks">法国新浪潮</a>
+            <a class="tag" href="/#picks">日本家庭剧</a>
+            <a class="tag" href="/#deep">版本考据</a>
+            <a class="tag" href="/#guide">字幕版本</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="13" fill="#e8b64c"/>
+            <path d="M8 12h48v8H8z" fill="#15213d"/>
+            <circle cx="20" cy="30" r="5" fill="#15213d"/>
+            <circle cx="32" cy="30" r="5" fill="#15213d"/>
+            <circle cx="44" cy="30" r="5" fill="#15213d"/>
+            <circle cx="20" cy="44" r="5" fill="#15213d"/>
+            <circle cx="32" cy="44" r="5" fill="#15213d"/>
+            <circle cx="44" cy="44" r="5" fill="#15213d"/>
+          </svg>
+          <span class="logo-text">外国片电影</span>
+        </div>
+        <p>按国别、年代与版本整理进口片条目，排片与上映日期写到具体某天，字幕与片长差异单独标注。</p>
+      </div>
+      <div>
+        <h2>片单与分类</h2>
+        <ul>
+          <li><a href="/#picks">法国新浪潮</a></li>
+          <li><a href="/#picks">日本家庭剧</a></li>
+          <li><a href="/#picks">北欧黑色电影</a></li>
+          <li><a href="/#cats">分类入口总览</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>版本与指南</h2>
+        <ul>
+          <li><a href="/#deep">影展版片长差</a></li>
+          <li><a href="/#guide">字幕版本选择</a></li>
+          <li><a href="/#faq">配音署名怎么看</a></li>
+          <li><a href="/#latest">院线上新</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>互动与榜单</h2>
+        <ul>
+          <li><a href="/#reviews">影迷评论</a></li>
+          <li><a href="/#chart">场均人次榜</a></li>
+          <li><a href="/#news">行业资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p><b>数据说明：</b>票房、场均人次与排片比例来自艺联分线排片表与院线周报的示例数据；片长与版本信息以公映许可证公示为准；评论为用户投稿示例，措辞保留原样。页面更新时间为 2026 年 11 月 8 日，对应正文可核对条目：《雾港列车》扩映、《北纬四十三度》字幕返工、《雪线上的信》重映首周票房。</p>
+      <p>© 2026 外国片电影 · 内容仅作观影参考，排片以影院当日公告为准。</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.matchMedia('(max-width:760px)').matches){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(!toTop) return;
+    if(window.pageYOffset>420){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+    highlight();
+  }
+  if(toTop){
+    toTop.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  }
+
+  var railLinks=Array.prototype.slice.call(document.querySelectorAll('#railNav a'));
+  var sections=railLinks.map(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos=window.pageYOffset+180;
+    var current=-1;
+    sections.forEach(function(s,i){
+      if(s&&s.offsetTop<=pos){current=i;}
+    });
+    railLinks.forEach(function(a,i){
+      a.classList.toggle('active',i===current);
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('load',onScroll);
+
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('q');
+  var fb=document.getElementById('searchFeedback');
+  if(form&&input&&fb){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var q=(input.value||'').trim().toLowerCase();
+      if(!q){fb.textContent='输入影片名、导演名或频道名再查，例如「雾港列车」「门多萨」。';fb.classList.add('show');return;}
+      var hits=[];
+      var nodes=document.querySelectorAll('main h2, main h3, main .tag, main .cat-item strong, main .chart .t, main .comment .score, main .news h3, main .tight-list a');
+      Array.prototype.forEach.call(nodes,function(el){
+        var t=(el.textContent||'').toLowerCase();
+        if(t.indexOf(q)>-1){
+          var href='';
+          var a=el.closest('a');
+          if(a){href=a.getAttribute('href');}
+          else{
+            var sec=el.closest('section');
+            if(sec&&sec.id){href='/# '+sec.id;href='#'+sec.id;}
+          }
+          hits.push({text:el.textContent.trim().slice(0,40),href:href});
+        }
+      });
+      if(hits.length===0){
+        fb.textContent='没有找到与「'+input.value.trim()+'」相关的条目，可试试「雪线上的信」「字幕」「版本」「影展」。';
+        fb.classList.add('show');
+        return;
+      }
+      var out='找到 '+hits.length+' 条：';
+      hits.slice(0,4).forEach(function(h){
+        out+=' 「'+h.text+'」';
+      });
+      if(hits.length>4){out+=' 等';}
+      fb.textContent=out;
+      fb.classList.add('show');
+      var first=hits[0].href;
+      if(first){
+        if(first.charAt(0)==='#'){
+          var target=document.getElementById(first.slice(1));
+          if(target){
+            var y=target.getBoundingClientRect().top+window.pageYOffset-112;
+            window.scrollTo({top:y>0?y:0,behavior:'smooth'});
+          }
+        }
+      }
+    });
+    input.addEventListener('input',function(){
+      if(!input.value){fb.classList.remove('show');}
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"外国片电影",
+  "alternateName":"外国片电影-院线新片与经典片单指南",
+  "inLanguage":"zh-CN",
+  "description":"按国别、年代与版本整理进口片条目，含院线排片、片单、版本考据与观影指南。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"外国片电影的字幕版本为什么同一部片会有两种译法？",
+      "acceptedAnswer":{"@type":"Answer","text":"发行方通常准备两套：一套给院线，一套给流媒体。院线版受放映时长与阅读速度限制，长句会拆短；流媒体版可回看，译法更贴原句。"}
+    },
+    {
+      "@type":"Question",
+      "name":"影展版比公映版长，长出来的部分通常是哪些内容？",
+      "acceptedAnswer":{"@type":"Answer","text":"多数是独白、空镜与次要人物线。以《雪线上的信》为例，删掉的 6 分钟集中在邮差独白与两段山口空镜。"}
+    },
+    {
+      "@type":"Question",
+      "name":"进口片在流媒体上线后，院线还会继续排片吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"会，但场次会压缩到 1—2 厅，且集中在晚间。窗口期通常 45—90 天，具体以发行方公告为准。"}
+    },
+    {
+      "@type":"Question",
+      "name":"如何判断一部外国片的配音版值不值得看？",
+      "acceptedAnswer":{"@type":"Answer","text":"看配音演员署名与录音棚。署名齐全、有独立混录的，通常可用；只标「普通话配音」而无署名的，建议选原声。"}
+    },
+    {
+      "@type":"Question",
+      "name":"导演回顾展的片源和院线版一样吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不一定。回顾展多用修复版或原始拷贝，画幅与调色可能与院线版不同。门多萨回顾展 8 部长片里有 3 部标注 4K 修复。"}
+    }
+  ]
+}
+</script>
+</body>
+              </html>
