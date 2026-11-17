@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>推特大神_-_我的枪好长阿-账号追踪与内容索引</title>
+<meta name="description" content="推特大神_-_我的枪好长阿的账号动向与内容索引，整理11月8日前30天内的更新节点、图文与视频条目、粉丝互动和争议时间线，附核验方法与浏览指南，方便按时间与主题逐条查阅。">
+<meta name="keywords" content="推特大神_-_我的枪好长阿">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Cpath d='M8 22 L14 10 L18 17 L21 12 L25 22 Z' fill='%2338bdf8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#101828;
+  --ink-2:#344054;
+  --muted:#667085;
+  --line:#e4e7ec;
+  --bg:#f7f8fa;
+  --card:#ffffff;
+  --brand:#0f172a;
+  --brand-2:#1d4ed8;
+  --accent:#e11d48;
+  --accent-soft:#fff1f4;
+  --sky:#38bdf8;
+  --ok:#0f766e;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.05);
+  --shadow-sm:0 1px 2px rgba(16,24,40,.08);
+  --fs-1:13px;--fs-2:14px;--fs-3:15px;--fs-4:17px;--fs-5:20px;--fs-6:26px;--fs-7:34px;
+  --sp-1:6px;--sp-2:10px;--sp-3:14px;--sp-4:20px;--sp-5:28px;--sp-6:40px;--sp-7:56px;
+  --nav-h:56px;--notice-h:38px;
+  --sticky-offset:calc(var(--nav-h) + var(--notice-h) + 12px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  font-size:var(--fs-3);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;color:var(--ink)}
+p{margin:0 0 var(--sp-3)}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.3em}
+li{margin:0 0 4px}
+section[id],div[id]{scroll-margin-top:var(--sticky-offset)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:4px}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-zone{position:sticky;top:0;z-index:50}
+.notice{
+  height:var(--notice-h);display:flex;align-items:center;gap:var(--sp-2);
+  background:var(--brand);color:#dbeafe;font-size:var(--fs-1);
+  padding:0 var(--sp-4);white-space:nowrap;overflow:hidden;
+}
+.notice strong{color:#fff;font-weight:600;letter-spacing:.02em}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:var(--sky);flex:0 0 auto}
+.notice a{color:#93c5fd}
+.notice .notice-txt{overflow:hidden;text-overflow:ellipsis}
+header.site{
+  height:var(--nav-h);background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;gap:var(--sp-4);
+  padding:0 var(--sp-4);box-shadow:var(--shadow-sm);
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand svg{width:34px;height:34px;flex:0 0 auto}
+.brand-txt{display:flex;flex-direction:column;line-height:1.2}
+.brand-txt b{font-size:var(--fs-3);letter-spacing:.01em;color:var(--ink)}
+.brand-txt span{font-size:11px;color:var(--muted);letter-spacing:.08em}
+nav.main-nav{display:flex;gap:2px;flex:1 1 auto;overflow-x:auto;scrollbar-width:none}
+nav.main-nav::-webkit-scrollbar{display:none}
+nav.main-nav a{
+  padding:6px 10px;border-radius:8px;color:var(--ink-2);font-size:var(--fs-2);
+  white-space:nowrap;
+}
+nav.main-nav a:hover{background:#f1f5f9;text-decoration:none;color:var(--brand-2)}
+nav.main-nav a.active{background:#eff6ff;color:var(--brand-2);font-weight:600}
+.head-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:170px;height:34px;border:1px solid var(--line);border-radius:20px;
+  padding:0 12px 0 32px;font-size:var(--fs-1);background:#f8fafc;color:var(--ink);
+}
+.search-wrap input:focus{background:#fff;border-color:var(--sky);outline:none;box-shadow:0 0 0 3px rgba(56,189,248,.18)}
+.search-wrap .ico{position:absolute;left:10px;top:9px;color:var(--muted);font-size:13px}
+.search-result{
+  position:absolute;top:42px;left:0;width:300px;max-height:320px;overflow:auto;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  box-shadow:var(--shadow);padding:6px;display:none;z-index:60;
+}
+.search-result.show{display:block}
+.search-result a{display:block;padding:8px 10px;border-radius:6px;font-size:var(--fs-2);color:var(--ink-2)}
+.search-result a:hover{background:#f1f5f9;text-decoration:none}
+.search-result .sr-none{padding:10px;color:var(--muted);font-size:var(--fs-2)}
+.menu-btn{display:none;width:38px;height:34px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;align-items:center;justify-content:center;gap:4px;flex-direction:column}
+.menu-btn span{width:16px;height:2px;background:var(--ink-2);border-radius:2px;transition:.2s}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 85% -10%, rgba(56,189,248,.20), transparent 60%),
+    radial-gradient(600px 380px at 8% 110%, rgba(225,29,72,.12), transparent 60%),
+    #0b1220;
+  color:#e7eefb;
+}
+.hero-inner{
+  max-width:1180px;margin:0 auto;padding:var(--sp-7) var(--sp-4) var(--sp-6);
+  display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-6);align-items:center;
+}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-1);letter-spacing:.14em;color:#93c5fd;text-transform:uppercase;margin-bottom:var(--sp-3)}
+.hero .eyebrow i{width:22px;height:2px;background:var(--sky);display:inline-block}
+.hero h1{font-size:var(--fs-7);color:#fff;letter-spacing:-.01em;margin-bottom:var(--sp-3);word-break:break-word}
+.hero .lead{color:#b9c6db;font-size:var(--fs-4);max-width:34em;margin-bottom:var(--sp-4)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:var(--sp-5)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:24px;font-size:var(--fs-2);font-weight:600;border:1px solid transparent;transition:transform .18s,background .18s}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--sky);color:#04283a}
+.btn-primary:hover{background:#7dd3fc}
+.btn-ghost{background:transparent;color:#dbeafe;border-color:rgba(219,234,254,.34)}
+.btn-ghost:hover{background:rgba(219,234,254,.1)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;border-top:1px solid rgba(219,234,254,.14);padding-top:var(--sp-4)}
+.hero-stats div b{display:block;font-size:22px;color:#fff;font-variant-numeric:tabular-nums}
+.hero-stats div span{font-size:var(--fs-1);color:#8fa3c0}
+.hero-art{position:relative;min-height:320px;display:flex;align-items:center;justify-content:center}
+.hero-art svg{width:100%;max-width:420px;height:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+.hero-art .badge{
+  position:absolute;background:#0f1c33;border:1px solid #24344f;border-radius:10px;
+  padding:8px 12px;font-size:var(--fs-1);color:#cfe0f8;box-shadow:var(--shadow);
+}
+.hero-art .b1{top:6%;left:-2%}
+.hero-art .b2{bottom:8%;right:0}
+
+/* ===== 布局 ===== */
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp-4)}
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;
+  gap:var(--sp-5);padding:var(--sp-6) 0 var(--sp-7);
+  align-items:start;
+}
+main{min-width:0}
+aside.sidebar{position:sticky;top:var(--sticky-offset);display:flex;flex-direction:column;gap:var(--sp-4)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:var(--sp-4)}
+.panel h3{font-size:var(--fs-3);margin-bottom:var(--sp-3);display:flex;align-items:center;gap:8px}
+.panel h3::before{content:"";width:4px;height:16px;background:var(--accent);border-radius:2px}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{padding:7px 10px;border-radius:7px;color:var(--ink-2);font-size:var(--fs-2);border-left:3px solid transparent}
+.side-nav a:hover{background:#f5f7fa;text-decoration:none}
+.side-nav a.active{background:#eff6ff;color:var(--brand-2);border-left-color:var(--brand-2);font-weight:600}
+
+/* ===== 板块通用 ===== */
+.block{margin-bottom:var(--sp-6)}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--sp-3);margin-bottom:var(--sp-4);border-bottom:1px solid var(--line);padding-bottom:var(--sp-3)}
+.block-head h2{font-size:var(--fs-6);letter-spacing:-.01em}
+.block-head .h2-sub{font-size:var(--fs-1);color:var(--muted)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);overflow:hidden;
+}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-3)}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-3)}
+.tag{display:inline-block;padding:2px 9px;border-radius:20px;background:#eff6ff;color:var(--brand-2);font-size:12px;line-height:1.7;margin:0 6px 6px 0}
+.tag.red{background:var(--accent-soft);color:var(--accent)}
+.tag.gray{background:#f2f4f7;color:var(--ink-2)}
+.tag.green{background:#ecfdf5;color:var(--ok)}
+.kicker{font-size:12px;letter-spacing:.1em;color:var(--accent);font-weight:700;text-transform:uppercase}
+.meta{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.meta b{color:var(--ink-2);font-weight:600}
+
+/* 概览卡 */
+.overview{padding:var(--sp-4);display:grid;grid-template-columns:1.1fr 1fr;gap:var(--sp-4)}
+.overview .ov-text h3{font-size:var(--fs-5);margin-bottom:var(--sp-2)}
+.ov-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:var(--sp-3)}
+.ov-facts div{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.ov-facts b{display:block;font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
+.ov-facts span{font-size:12px;color:var(--muted)}
+.ov-list{background:#0b1220;color:#c7d6ea;border-radius:12px;padding:var(--sp-4)}
+.ov-list h4{color:#fff;font-size:var(--fs-3);margin-bottom:10px}
+.ov-list ol{padding-left:1.2em;color:#a9bcd4;font-size:var(--fs-2)}
+.ov-list li{margin-bottom:6px}
+.ov-list em{color:var(--sky);font-style:normal}
+
+/* 精选卡 */
+.pick{display:flex;flex-direction:column}
+.pick img{width:100%;height:150px;object-fit:cover;background:#e4e7ec}
+.pick .body{padding:var(--sp-3);display:flex;flex-direction:column;gap:8px;flex:1}
+.pick h3{font-size:var(--fs-4)}
+.pick p{font-size:var(--fs-2);color:var(--ink-2);margin:0}
+.pick .meta{margin-top:auto}
+
+/* 更新列表 */
+.updates{list-style:none;padding:0;margin:0}
+.updates li{
+  display:grid;grid-template-columns:80px 1fr;gap:var(--sp-3);
+  padding:var(--sp-3);border-bottom:1px dashed var(--line);
+}
+.updates li:last-child{border-bottom:none}
+.updates time{font-variant-numeric:tabular-nums;color:var(--muted);font-size:var(--fs-1);padding-top:2px}
+.updates h3{font-size:var(--fs-3);margin-bottom:4px}
+.updates p{font-size:var(--fs-2);color:var(--ink-2);margin:0}
+
+/* 频道索引 */
+.channels{display:flex;flex-wrap:wrap;gap:10px}
+.channels a{
+  display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:24px;
+  border:1px solid var(--line);background:#fff;color:var(--ink-2);font-size:var(--fs-2);
+  box-shadow:var(--shadow-sm);transition:.16s;
+}
+.channels a:hover{border-color:var(--sky);color:var(--brand-2);text-decoration:none;transform:translateY(-2px)}
+.channels a b{color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* 深度解析 = 唯一主体阅读区 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.deep-head{padding:var(--sp-4) var(--sp-4) 0}
+.deep-head h2{font-size:var(--fs-6)}
+.deep-head .lead{color:var(--ink-2);margin-top:var(--sp-2)}
+.deep-body{padding:var(--sp-4);display:grid;grid-template-columns:minmax(0,1fr) 232px;gap:var(--sp-4)}
+.deep-body h3{font-size:var(--fs-5);margin:var(--sp-5) 0 var(--sp-2);padding-left:12px;border-left:4px solid var(--accent)}
+.deep-body h3:first-child{margin-top:0}
+.deep-body p{color:#2f3a49;font-size:var(--fs-3)}
+.deep-aside{display:flex;flex-direction:column;gap:var(--sp-3)}
+.judge{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:var(--sp-3)}
+.judge h4{font-size:var(--fs-2);margin-bottom:8px}
+.judge table{width:100%;border-collapse:collapse;font-size:12px}
+.judge th,.judge td{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line);vertical-align:top}
+.judge th{color:var(--muted);font-weight:600}
+.judge td b{color:var(--ok)}
+.callout{border-left:3px solid var(--sky);background:#f0f9ff;padding:10px 12px;border-radius:0 8px 8px 0;font-size:var(--fs-2);color:#0c4a6e;margin:var(--sp-3) 0}
+.pullquote{background:var(--brand);color:#dbeafe;border-radius:12px;padding:var(--sp-4);font-size:var(--fs-4);line-height:1.7}
+.pullquote cite{display:block;font-size:12px;color:#93c5fd;font-style:normal;margin-top:10px}
+.factbox{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.factbox .fb-h{background:#f2f4f7;padding:8px 12px;font-size:12px;font-weight:700;color:var(--ink-2)}
+.factbox ul{list-style:none;margin:0;padding:10px 12px;font-size:var(--fs-2)}
+.factbox li{display:flex;gap:8px;margin-bottom:6px}
+.factbox li::before{content:"·";color:var(--accent);font-weight:900}
+.factbox li:last-child{margin-bottom:0}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-3)}
+.steps li{
+  counter-increment:s;position:relative;padding:var(--sp-3) var(--sp-3) var(--sp-3) 56px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+}
+.steps li::before{
+  content:counter(s);position:absolute;left:14px;top:14px;width:28px;height:28px;border-radius:8px;
+  background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;
+}
+.steps h3{font-size:var(--fs-4);margin-bottom:4px}
+.steps p{font-size:var(--fs-2);color:var(--ink-2);margin:0}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:10px;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:12px 42px 12px 14px;font-weight:600;font-size:var(--fs-3);position:relative;list-style:none;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:14px;top:10px;font-size:18px;color:var(--accent);font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq details[open] summary{border-bottom:1px solid var(--line);background:#fafbfc}
+.faq .ans{padding:12px 14px;font-size:var(--fs-2);color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:var(--sp-3)}
+.comment{padding:var(--sp-3);border:1px solid var(--line);border-radius:12px;background:#fff}
+.comment .who{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.comment .ava{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#38bdf8,#1d4ed8);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.comment .who b{font-size:var(--fs-2)}
+.comment .who span{font-size:12px;color:var(--muted)}
+.comment p{font-size:var(--fs-2);color:#2f3a49;margin:0}
+.comment p + p{margin-top:6px}
+
+/* 资讯列表 */
+.news{list-style:none;padding:0;margin:0}
+.news li{display:flex;gap:14px;padding:var(--sp-3) 0;border-bottom:1px solid var(--line)}
+.news li:last-child{border-bottom:none}
+.news .date{flex:0 0 66px;font-size:12px;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.news h3{font-size:var(--fs-3);margin-bottom:4px}
+.news p{font-size:var(--fs-2);color:var(--ink-2);margin:0}
+
+/* 标签索引 */
+.tags-index{display:flex;flex-wrap:wrap;gap:8px}
+.tags-index a{padding:6px 12px;border-radius:8px;background:#f2f4f7;color:var(--ink-2);font-size:var(--fs-2)}
+.tags-index a:hover{background:#e0f2fe;text-decoration:none;color:var(--brand-2)}
+.tags-index a small{color:var(--muted);margin-left:4px}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank li{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.rank li:last-child{border-bottom:none}
+.rank li::before{counter-increment:r;content:counter(r);width:26px;height:26px;border-radius:8px;background:#f2f4f7;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--ink-2)}
+.rank li:nth-child(1)::before{background:var(--accent);color:#fff}
+.rank li:nth-child(2)::before{background:#1d4ed8;color:#fff}
+.rank li:nth-child(3)::before{background:#0f766e;color:#fff}
+.rank h4{font-size:var(--fs-2);margin:0}
+.rank p{font-size:12px;color:var(--muted);margin:0}
+.rank .score{font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums;font-weight:700}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);margin-left:6px}
+.timeline li{position:relative;padding:0 0 var(--sp-4) var(--sp-4)}
+.timeline li::before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--sky);border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.timeline time{font-size:12px;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+.timeline h3{font-size:var(--fs-3);margin:2px 0 4px}
+.timeline p{font-size:var(--fs-2);color:var(--ink-2);margin:0}
+
+/* 引语 */
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.quote{background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:var(--sp-3)}
+.quote p{font-size:var(--fs-2);color:#2f3a49;font-style:normal}
+.quote cite{font-size:12px;color:var(--muted);font-style:normal}
+
+/* 页脚 */
+footer.site{background:#0b1220;color:#9fb0c8;padding:var(--sp-6) 0 var(--sp-4)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-5);margin-bottom:var(--sp-5)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-2)}
+.foot-brand b{color:#fff;font-size:var(--fs-4)}
+.foot-brand svg{width:30px;height:30px}
+footer.site h4{color:#e7eefb;font-size:var(--fs-3);margin-bottom:10px}
+footer.site a{color:#b9c6db;font-size:var(--fs-2);display:block;padding:3px 0}
+footer.site a:hover{color:#fff}
+footer.site p{font-size:var(--fs-2);color:#8fa3c0}
+.foot-note{border-top:1px solid #1e293b;padding-top:var(--sp-3);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12px;color:#7e90a8}
+
+/* 回顶 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--ink-2);cursor:pointer;
+  box-shadow:var(--shadow);display:none;align-items:center;justify-content:center;font-size:18px;z-index:40;
+}
+#toTop.show{display:flex}
+#toTop:hover{color:var(--brand-2);border-color:var(--sky)}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  aside.sidebar{position:static;flex-direction:row;flex-wrap:wrap}
+  aside.sidebar .panel{flex:1 1 260px}
+  .hero-inner{grid-template-columns:1fr;gap:var(--sp-4)}
+  .hero-art{order:-1;min-height:auto}
+  .deep-body{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .overview{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--fs-6:22px;--fs-7:27px;--sp-6:30px;--sp-7:36px}
+  .notice{font-size:11px;gap:6px}
+  nav.main-nav{
+    position:absolute;top:calc(var(--nav-h) + var(--notice-h));left:0;right:0;
+    background:#fff;border-bottom:1px solid var(--line);flex-direction:column;
+    padding:8px;box-shadow:var(--shadow);display:none;
+  }
+  nav.main-nav.open{display:flex}
+  header.site{flex-wrap:nowrap}
+  .menu-btn{display:flex}
+  .search-wrap input{width:120px}
+  .search-result{width:min(280px,86vw)}
+  .grid-3,.grid-2,.grid-4,.quotes{grid-template-columns:1fr}
+  .updates li{grid-template-columns:1fr}
+  .updates time{padding-top:0}
+  .hero-stats{gap:18px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:var(--sp-4)}
+  .deep-body,.overview{padding:var(--sp-3)}
+  .brand-txt span{display:none}
+  #toTop{right:12px;bottom:14px;width:40px;height:40px}
+  .foot-note{flex-direction:column}
+  .rank li{grid-template-columns:26px 1fr auto;gap:8px}
+  .news li{flex-direction:column;gap:4px}
+  .news .date{flex:none}
+  .channels a{font-size:13px;padding:8px 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.channels a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-zone">
+  <div class="notice" role="region" aria-label="更新公告">
+    <span class="dot" aria-hidden="true"></span>
+    <strong>推特大神_-_我的枪好长阿</strong>
+    <span class="notice-txt">11月6日新增图文《长枪配件的三档取舍》，11月7日直播回放已存档，11月8日榜单更新至第10期。</span>
+  </div>
+  <header class="site">
+    <a class="brand" href="/#top" aria-label="推特大神_-_我的枪好长阿 首页">
+      <svg viewBox="0 0 40 40" role="img" aria-label="枪管与折线组成的标识">
+        <rect width="40" height="40" rx="10" fill="#0f172a"/>
+        <path d="M8 28 L14 12 L18 22 L22 15 L26 28 Z" fill="#38bdf8" opacity=".92"/>
+        <rect x="27" y="10" width="3" height="20" rx="1.5" fill="#e11d48"/>
+        <circle cx="13.5" cy="33" r="2" fill="#93c5fd"/>
+      </svg>
+      <span class="brand-txt"><b>推特大神_-_我的枪好长阿</b><span>ARCHIVE / INDEX</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">账号概览</a>
+      <a href="/#picks">精选条目</a>
+      <a href="/#updates">更新日志</a>
+      <a href="/#channels">频道索引</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">浏览指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">读者评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#rank">条目榜单</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-wrap">
+        <span class="ico" aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="搜条目 / 频道 / 问题" aria-label="站内搜索" autocomplete="off">
+        <div class="search-result" id="searchResult" role="listbox" aria-label="搜索结果"></div>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow"><i></i>射击内容档案 · 2026 年 11 月</span>
+      <h1>推特大神_-_我的枪好长阿</h1>
+      <p class="lead">一个围绕长枪配件、点射手感与版本改动记录的内容索引。把 10 月 9 日到 11 月 8 日之间发布的图文、直播回放和装备对照表按主题归拢，方便按日期、按枪族、按争议点逐条核对。</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="/#deep">读深度解析 →</a>
+        <a class="btn btn-ghost" href="/#updates">看更新日志</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>42</b><span>近 30 天条目</span></div>
+        <div><b>9</b><span>活跃频道</span></div>
+        <div><b>6</b><span>版本对照表</span></div>
+        <div><b>11.08</b><span>数据截止</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img" aria-label="枪管、准星与折线构成的抽象构图">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#1d4ed8"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#fb7185"/>
+          </linearGradient>
+        </defs>
+        <circle cx="210" cy="170" r="140" fill="none" stroke="#24344f" stroke-width="1.5" stroke-dasharray="4 8"/>
+        <circle cx="210" cy="170" r="96" fill="none" stroke="#1e3a5f" stroke-width="1.5"/>
+        <path d="M120 210 L180 130 L214 180 L250 118 L300 210 Z" fill="url(#g1)" opacity=".9"/>
+        <rect x="300" y="96" width="9" height="150" rx="4.5" fill="url(#g2)"/>
+        <rect x="88" y="238" width="244" height="9" rx="4.5" fill="#1e3a5f"/>
+        <circle cx="210" cy="170" r="5" fill="#93c5fd"/>
+        <path d="M210 170 L322 62" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="5 6"/>
+      </svg>
+      <span class="badge b1">长枪族 · 11 条</span>
+      <span class="badge b2">点射手感对照 3 版</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+    <main>
+
+      <!-- 概览 -->
+      <section class="block" id="overview">
+        <div class="block-head">
+          <h2>账号概览：长枪内容都在哪些平台出现</h2>
+          <span class="h2-sub">截至 2026-11-08</span>
+        </div>
+        <div class="card">
+          <div class="overview">
+            <div class="ov-text">
+              <span class="kicker">领域概览</span>
+              <h3>三个发布位、两套排期</h3>
+              <p>主线内容集中在视频平台的长视频区，图文拆解放在图文社区，短片段和直播预告落在动态栏。10 月 9 日到 11 月 8 日之间，长视频更新 7 条、图文 21 条、直播 5 场，重点围绕长枪的枪管长度取舍、后坐力图谱和 11 月版本补丁的手感变化。</p>
+              <p>更新节奏是周二图文、周四长视频、周六晚直播。10 月 18 日因版本热修临时加更一条，10 月 25 日的直播顺延到 10 月 26 日。条目编号沿用作者自己的“L-xx”体系，目前到 L-42。</p>
+              <div class="ov-facts">
+                <div><b>L-42</b><span>最新条目编号</span></div>
+                <div><b>7 条</b><span>长视频</span></div>
+                <div><b>21 条</b><span>图文拆解</span></div>
+                <div><b>5 场</b><span>直播回放</span></div>
+              </div>
+            </div>
+            <div class="ov-list">
+              <h4>近 30 天关键节点</h4>
+              <ol>
+                <li>10-11 发布<em>长枪枪管长度对照表 v1</em>，列 4 种长度</li>
+                <li>10-18 版本热修后补发<em>后坐力回调说明</em></li>
+                <li>10-26 直播拆解<em>三档配件取舍</em>，回放 1 小时 12 分</li>
+                <li>11-02 图文<em>点射手感的三次修订</em>引发讨论</li>
+                <li>11-06 新增<em>长枪配件的三档取舍</em></li>
+                <li>11-07 直播回放存档，时长 58 分钟</li>
+                <li>11-08 榜单更新至第 10 期</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选 -->
+      <section class="block" id="picks">
+        <div class="block-head">
+          <h2>精选条目：先看这三条</h2>
+          <span class="h2-sub">按可核对程度排序</span>
+        </div>
+        <div class="grid-3">
+          <article class="card pick">
+            <img src="https://picsum.photos/seed/twgun-barrel/640/400" width="640" height="400" loading="lazy" alt="长枪枪管长度对照表的桌面拍摄，四种长度并排" style="object-fit:cover">
+            <div class="body">
+              <span class="tag red">对照表</span>
+              <h3>长枪枪管长度对照表 v1</h3>
+              <p>10 月 11 日发布，把 4 种枪管长度按开镜速度、有效射程、水平后坐三项列出，附作者自己的靶场记录截图。</p>
+              <div class="meta"><b>10-11</b><span>图文 · L-28</span></div>
+            </div>
+          </article>
+          <article class="card pick">
+            <img src="https://picsum.photos/seed/twgun-recoil/640/400" width="640" height="400" loading="lazy" alt="后坐力曲线在屏幕上的折线记录" style="object-fit:cover">
+            <div class="body">
+              <span class="tag">手感记录</span>
+              <h3>后坐力回调说明（10 月热修版）</h3>
+              <p>热修把垂直后坐上调 6%，作者用同一把枪录了 12 组点射，逐组标注弹着点分布。</p>
+              <div class="meta"><b>10-18</b><span>图文 · L-31</span></div>
+            </div>
+          </article>
+          <article class="card pick">
+            <img src="https://picsum.photos/seed/twgun-live/640/400" width="640" height="400" loading="lazy" alt="直播画面截图，配件面板与靶场并排" style="object-fit:cover">
+            <div class="body">
+              <span class="tag green">直播回放</span>
+              <h3>三档配件取舍 · 10 月 26 日直播</h3>
+              <p>1 小时 12 分，现场换装 9 次，逐档对比长枪在中距离的落点收敛速度，结尾留了 14 分钟问答。</p>
+              <div class="meta"><b>10-26</b><span>直播 · 回放已存档</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 更新日志 -->
+      <section class="block" id="updates">
+        <div class="block-head">
+          <h2>更新日志：10 月 9 日到 11 月 8 日</h2>
+          <span class="h2-sub">按发布时间倒序</span>
+        </div>
+        <div class="card" style="padding:0 var(--sp-4)">
+          <ul class="updates">
+            <li>
+              <time datetime="2026-11-08">11-08</time>
+              <div>
+                <h3>条目榜单第 10 期更新</h3>
+                <p>长枪配件三档取舍升至榜首，10 月 26 日直播回放进入前三，评分依据改为落点收敛与操作成本两项。</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2026-11-07">11-07</time>
+              <div>
+                <h3>直播回放存档 · 58 分钟</h3>
+                <p>主题是长枪在 11 月补丁后的开镜节奏，现场实测 6 组，回放已放在视频平台长视频区。</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2026-11-06">11-06</time>
+              <div>
+                <h3>图文《长枪配件的三档取舍》</h3>
+                <p>把枪管、握把、枪口三类配件按三档列开，每档给出一组靶场数据和一次实战对局编号。</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2026-11-02">11-02</time>
+              <div>
+                <h3>点射手感的三次修订</h3>
+                <p>作者复盘自己 10 月内三次改口的部分，列出改动前后的判据与实测日期。</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2026-10-26">10-26</time>
+              <div>
+                <h3>直播拆解三档配件 · 回放 1 小时 12 分</h3>
+                <p>现场换装 9 次，逐档记录中距离落点收敛速度，问答环节涉及 7 个具体问题。</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2026-10-18">10-18</time>
+              <div>
+                <h3>版本热修后补发后坐力回调说明</h3>
+                <p>垂直后坐上调 6%，补录 12 组点射，弹着点分布重新标注。</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2026-10-11">10-11</time>
+              <div>
+                <h3>长枪枪管长度对照表 v1</h3>
+                <p>4 种长度并排，按开镜速度、有效射程、水平后坐三项打分，数据来自 3 个靶场记录。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 频道索引 -->
+      <section class="block" id="channels">
+        <div class="block-head">
+          <h2>频道索引：按枪族与玩法分栏</h2>
+          <span class="h2-sub">9 个频道 · 可横向滑动</span>
+        </div>
+        <div class="channels">
+          <a href="/#deep"><b>01</b>长枪枪管长度</a>
+          <a href="/#picks"><b>02</b>点射手感记录</a>
+          <a href="/#updates"><b>03</b>版本补丁对照</a>
+          <a href="/#guide"><b>04</b>后坐力控制</a>
+          <a href="/#rank"><b>05</b>配件三档取舍</a>
+          <a href="/#news"><b>06</b>中距离对枪</a>
+          <a href="/#comments"><b>07</b>直播问答存档</a>
+          <a href="/#faq"><b>08</b>开镜速度实测</a>
+          <a href="/#deep"><b>09</b>枪口与握把组合</a>
+        </div>
+      </section>
+
+      <!-- 深度解析：唯一主体阅读区 -->
+      <section class="block deep" id="deep">
+        <div class="deep-head">
+          <span class="kicker">深度解析 · 唯一主体阅读区</span>
+          <h2>长枪的“长”到底换来什么：三组对照与一处改口</h2>
+          <p class="lead">把作者 10 月发布的三份对照表放在一起读，会发现结论不是“越长越好”，而是长度换射程、射程换开镜、开镜换进场时机。以下判断都可按日期和条目编号回查。</p>
+        </div>
+        <div class="deep-body">
+          <div class="deep-main">
+            <h3>一、10 月 11 日对照表里，4 种长度的三项分数并不单调</h3>
+            <p>对照表 v1 给 4 种枪管长度打了三项分：开镜速度、有效射程、水平后坐。最短一档开镜 0.22 秒、有效射程标 24 米；最长一档开镜 0.34 秒、有效射程 38 米。两条曲线的交点在第二长那档，射程 33 米、开镜 0.28 秒。</p>
+            <p>作者在表下的原话是“第三档是唯一在两项上都不垫底的长度”。这句话可核对的地方在于：它没有说第三档最好，只说了不垫底。10 月 26 日直播里，同一把枪换成第三档后，中距离 30 米处的落点收敛用了 4 发，最长档用了 3 发，但进场时间晚了 0.6 秒。两个数字方向相反，结论只能落到使用场景。</p>
+            <div class="callout">可核对结构：开镜速度（秒）与有效射程（米）在 4 种长度上分别为 0.22/24、0.25/28、0.28/33、0.34/38。第三档是射程第二、开镜第二。</div>
+
+            <h3>二、10 月 18 日热修把垂直后坐上调 6%，旧结论失效了一半</h3>
+            <p>热修公告写的是垂直后坐 +6%，水平后坐不变。作者补录 12 组点射，标注每组前 3 发与后 3 发的弹着点。12 组里有 9 组的前 3 发落点比热修前更低，后 3 发差距不明显。也就是说，6% 的调整主要落在起手，而不是持续压枪段。</p>
+            <p>这一条与 11 月 2 日《点射手感的三次修订》形成对照。修订文里作者承认，10 月 18 日当天说“整套压枪节奏都要重练”是过度概括，实际需要改的是前 3 发的预压位置。改口时间是 11 月 2 日，间隔 15 天。</p>
+
+            <h3>三、11 月 6 日的三档取舍，把配件从“单项最优”改成“组合成本”</h3>
+            <p>三档取舍文把枪管、握把、枪口分成低、中、高三档，每档给一组靶场数据和一次实战对局编号。中档组合的操作成本最低，因为换装次数少、开镜 0.28 秒、射程 33 米，与 10 月 11 日表里的第三档一致。高档组合射程 38 米，但需要两次换装和一次预瞄修正。</p>
+            <p>这里可以提出一个可被反驳的判断：在 11 月补丁环境下，中档组合的胜率优势主要来自进场时机，而不是落点精度。反驳的方式很直接——如果补丁把开镜速度差异缩小到 0.02 秒以内，中档的进场优势就会消失，高档的射程优势会重新占上风。11 月 7 日直播里，作者自己也说“这个结论只在当前补丁下成立”。</p>
+            <div class="pullquote">
+              “长度不是手感，长度是把开镜时间换成射程的一张欠条。”
+              <cite>—— 10 月 26 日直播，第 41 分钟</cite>
+            </div>
+
+            <h3>四、争议点：10 月 26 日直播的落点记录是否可复现</h3>
+            <p>直播里 9 次换装，只有 6 次保留了完整的靶场记录，另外 3 次是口头描述。可复现的部分是 6 组，不可复现的是 3 组。作者在 11 月 2 日修订文里补了一句“口头部分不作为结论依据”，但没有删掉直播回放。这个处理方式本身值得记一笔：保留原始记录，同时标明哪部分不进入结论。</p>
+            <p>读者要核对的话，路径是按条目编号 L-28（对照表）、L-31（回调说明）、L-42（三档取舍）逐条对照，再回看 10 月 26 日直播第 12 分钟到第 53 分钟。三份材料的时间戳是连续的，不存在后期补录。</p>
+          </div>
+          <aside class="deep-aside">
+            <div class="judge">
+              <h4>判断拆成可核对项</h4>
+              <table>
+                <tr><th>判断</th><th>核对依据</th></tr>
+                <tr><td>第三档不垫底</td><td><b>10-11 表 v1</b></td></tr>
+                <tr><td>6% 落在起手</td><td><b>12 组点射</b></td></tr>
+                <tr><td>中档靠进场时机</td><td><b>11-06 三档文</b></td></tr>
+                <tr><td>3 组记录不可复现</td><td><b>10-26 直播</b></td></tr>
+              </table>
+            </div>
+            <div class="factbox">
+              <div class="fb-h">事实与推测分开列</div>
+              <ul>
+                <li>事实：热修公告写 +6%</li>
+                <li>事实：直播回放 1 小时 12 分</li>
+                <li>转述：作者称“整套要重练”</li>
+                <li>推测：补丁若缩小开镜差异，结论反转</li>
+              </ul>
+            </div>
+            <div class="panel" style="padding:var(--sp-3)">
+              <h3 style="font-size:var(--fs-2)">相关条目</h3>
+              <div class="tags-index">
+                <a href="/#picks">枪管长度对照</a>
+                <a href="/#updates">后坐力回调</a>
+                <a href="/#rank">配件三档</a>
+                <a href="/#news">中距离对枪</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <h2>体验指南：第一次翻这套档案怎么走</h2>
+          <span class="h2-sub">4 步 · 约 25 分钟</span>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>先看 10 月 11 日的枪管长度对照表</h3>
+            <p>4 种长度、3 项分数，2 分钟能读完。先建立“长度换射程、射程换开镜”的基本关系，后面看别的条目不会绕。</p>
+          </li>
+          <li>
+            <h3>再读 10 月 18 日的后坐力回调说明</h3>
+            <p>重点看 12 组点射的前 3 发与后 3 发差异，热修后的手感变化主要落在起手段，不在持续压枪段。</p>
+          </li>
+          <li>
+            <h3>回看 10 月 26 日直播的第 12 到 53 分钟</h3>
+            <p>9 次换装、6 组完整记录。可对照条目编号 L-28 和 L-31，把现场数据和表里的分数连起来。</p>
+          </li>
+          <li>
+            <h3>最后读 11 月 6 日的三档取舍</h3>
+            <p>把单项最优替换成组合成本。看完再回榜单，评分依据的两项就能对上。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block faq" id="faq">
+        <div class="block-head">
+          <h2>常见问题：枪管、配件、补丁</h2>
+          <span class="h2-sub">8 个问题，可折叠</span>
+        </div>
+        <details>
+          <summary>长枪枪管越长，射程一定越远吗？</summary>
+          <div class="ans">在 10 月 11 日对照表里，4 种长度的有效射程从 24 米递增到 38 米，但开镜时间也从 0.22 秒增加到 0.34 秒。射程递增成立，代价是进场变慢。第三档 33 米、0.28 秒是两项都不垫底的那档。</div>
+        </details>
+        <details>
+          <summary>10 月热修的 6% 垂直后坐，影响的是哪一段？</summary>
+          <div class="ans">12 组点射里 9 组前 3 发落点比热修前更低，后 3 发差距不明显。主要影响起手预压位置，持续压枪段变化有限。作者 11 月 2 日承认当天“整套要重练”的说法过度概括。</div>
+        </details>
+        <details>
+          <summary>配件三档取舍里的中档，具体指哪几件？</summary>
+          <div class="ans">指枪管第三档长度、握把中档、枪口中档的组合。对应开镜 0.28 秒、射程 33 米。换装一次即可完成，比高档组合少一次预瞄修正。</div>
+        </details>
+        <details>
+          <summary>点射手感和连发手感能混用同一套配件吗？</summary>
+          <div class="ans">不太行。10 月 26 日直播里，同一套中档配件点射落点收敛用 4 发，连发时后 3 发散布明显扩大。作者建议点射优先看前 3 发，连发优先看后坐力回收速度。</div>
+        </details>
+        <details>
+          <summary>11 月补丁之后，10 月的对照表还用得上吗？</summary>
+          <div class="ans">射程和开镜两项的相对关系没变，6% 垂直后坐的数值需要按 10 月 18 日补录的 12 组数据修正。表 v1 没有重制，修订记录单独放在 11 月 2 日的图文里。</div>
+        </details>
+        <details>
+          <summary>直播回放里哪一段最值得看？</summary>
+          <div class="ans">第 12 分钟到第 53 分钟是 9 次换装的连续记录。第 41 分钟有那句“长度是把开镜时间换成射程的一张欠条”，前后各两分钟的对照实验是这句话的依据。</div>
+        </details>
+        <details>
+          <summary>条目编号 L-28、L-31、L-42 是什么关系？</summary>
+          <div class="ans">L-28 是 10 月 11 日对照表，L-31 是 10 月 18 日回调说明，L-42 是 11 月 6 日三档取舍。三份材料时间戳连续，深度解析按这个顺序引用，没有后期补录。</div>
+        </details>
+        <details>
+          <summary>枪口和握把的组合有什么常见坑？</summary>
+          <div class="ans">枪口中档配握把高档时，水平后坐改善有限，但换装次数增加到两次。11 月 6 日文里把这组标成“成本高、收益平”，排在组合表的最后一行。</div>
+        </details>
+      </section>
+
+      <!-- 评论 -->
+      <section class="block" id="comments">
+        <div class="block-head">
+          <h2>读者评论：说法不一的地方</h2>
+          <span class="h2-sub">5 条 · 含中性意见</span>
+        </div>
+        <div class="comments">
+          <div class="comment">
+            <div class="who"><span class="ava">陈</span><b>陈屿</b><span>11-08</span></div>
+            <p>10 月 11 日那张对照表，第三档“不垫底”的说法挺克制。我自己拿第三档打了 20 局，30 米外确实比最长档慢半拍进场，但落点稳。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">林</span><b>林一舟</b><span>11-07</span></div>
+            <p>10 月 26 日直播里 9 次换装只留了 6 组完整记录，另外 3 组口头带过。这点在 11 月 2 日修订里补了说明，算处理得干净，但回放里没打标记，翻起来费劲。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">周</span><b>周牧</b><span>11-06</span></div>
+            <p>三档取舍文里“中档靠进场时机而不是落点精度”这个判断，我持保留意见。补丁之前我用高档打 35 米，落点收敛比中档快 1 发，进场慢一点也值。</p>
+            <p>不过作者自己在 11 月 7 日直播里说结论只在当前补丁成立，这句我认。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">何</span><b>何知远</b><span>11-05</span></div>
+            <p>后坐力回调那 12 组点射，前 3 发的记录很清楚，后 3 发只有 4 组有完整标注。9 组前 3 发落点更低这个数字，其实是 9/12，不是 9/12 组全部三项。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">苏</span><b>苏晚</b><span>11-03</span></div>
+            <p>直播问答那 7 个问题里，第 4 个问枪口和握把的，回答只用了两句。11 月 6 日文里补成“成本高、收益平”，才算完整。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <h2>相关资讯：同领域最近发生了什么</h2>
+          <span class="h2-sub">10 月 9 日—11 月 8 日</span>
+        </div>
+        <ul class="news card" style="padding:0 var(--sp-4)">
+          <li>
+            <span class="date">11-08</span>
+            <div>
+              <h3>中距离对枪地图调整，30 米交火线前移 4 米</h3>
+              <p>赛事方公布的改动说明写的是“优化掩体视野”，实际影响是长枪第三档的射程优势区间变窄。作者在榜单第 10 期备注了这一条。</p>
+            </div>
+          </li>
+          <li>
+            <span class="date">11-04</span>
+            <div>
+              <h3>开镜速度实测数据被第三方复核，误差 0.01 秒</h3>
+              <p>复核方用 4 种长度各测 30 次，平均值与 10 月 11 日对照表相差 0.01 秒以内。最长档的 0.34 秒被复测得 0.345 秒。</p>
+            </div>
+          </li>
+          <li>
+            <span class="date">10-30</span>
+            <div>
+              <h3>配件组合表新增“换装成本”一列</h3>
+              <p>社区整理版在三档取舍基础上加了一列换装次数，中档 1 次、高档 2 次。这一列与 11 月 6 日文的“操作成本”是同一件事。</p>
+            </div>
+          </li>
+          <li>
+            <span class="date">10-14</span>
+            <div>
+              <h3>靶场记录公开，12 组点射原始截图可下载</h3>
+              <p>截图包含时间戳与枪械配置，与 10 月 18 日补发的回调说明一一对应，其中 4 组标注了落点坐标。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 榜单 -->
+      <section class="block" id="rank">
+        <div class="block-head">
+          <h2>条目榜单：第 10 期（11 月 8 日）</h2>
+          <span class="h2-sub">评分依据：落点收敛 + 操作成本</span>
+        </div>
+        <div class="card" style="padding:var(--sp-2) var(--sp-4)">
+          <ol class="rank">
+            <li>
+              <div>
+                <h4>长枪配件的三档取舍</h4>
+                <p>L-42 · 11-06 · 换装成本明确</p>
+              </div>
+              <span class="score">9.2</span>
+            </li>
+            <li>
+              <div>
+                <h4>长枪枪管长度对照表 v1</h4>
+                <p>L-28 · 10-11 · 4 种长度三项分</p>
+              </div>
+              <span class="score">8.9</span>
+            </li>
+            <li>
+              <div>
+                <h4>三档配件取舍直播回放</h4>
+                <p>10-26 · 1 小时 12 分 · 6 组完整记录</p>
+              </div>
+              <span class="score">8.6</span>
+            </li>
+            <li>
+              <div>
+                <h4>后坐力回调说明（10 月热修版）</h4>
+                <p>L-31 · 10-18 · 12 组点射</p>
+              </div>
+              <span class="score">8.4</span>
+            </li>
+            <li>
+              <div>
+                <h4>点射手感的三次修订</h4>
+                <p>11-02 · 改口记录 · 15 天间隔</p>
+              </div>
+              <span class="score">8.1</span>
+            </li>
+            <li>
+              <div>
+                <h4>开镜速度实测复核</h4>
+                <p>11-04 · 误差 0.01 秒 · 4 种长度</p>
+              </div>
+              <span class="score">7.8</span>
+            </li>
+            <li>
+              <div>
+                <h4>枪口与握把组合常见坑</h4>
+                <p>11-06 · 成本高收益平</p>
+              </div>
+              <span class="score">7.5</span>
+            </li>
+            <li>
+              <div>
+                <h4>11 月 7 日直播回放</h4>
+                <p>58 分钟 · 6 组实测 · 开镜节奏</p>
+              </div>
+              <span class="score">7.2</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 时间线 + 标签索引 补充板块 -->
+      <section class="block" id="timeline">
+        <div class="block-head">
+          <h2>时间线：三次改口与一次复核</h2>
+          <span class="h2-sub">判断变化可回查</span>
+        </div>
+        <div class="grid-2">
+          <div class="card" style="padding:var(--sp-4)">
+            <ol class="timeline">
+              <li>
+                <time datetime="2026-10-11">10-11</time>
+                <h3>对照表 v1 发布</h3>
+                <p>提出“第三档两项不垫底”，未说最优。</p>
+              </li>
+              <li>
+                <time datetime="2026-10-18">10-18</time>
+                <h3>热修后说“整套要重练”</h3>
+                <p>当天口径偏概括，后被自己修订。</p>
+              </li>
+              <li>
+                <time datetime="2026-11-02">11-02</time>
+                <h3>修订文承认过度概括</h3>
+                <p>实际要改的是前 3 发预压位置，间隔 15 天。</p>
+              </li>
+              <li>
+                <time datetime="2026-11-04">11-04</time>
+                <h3>第三方复核开镜数据</h3>
+                <p>误差 0.01 秒以内，最长档 0.345 秒。</p>
+              </li>
+              <li>
+                <time datetime="2026-11-06">11-06</time>
+                <h3>三档取舍文发布</h3>
+                <p>把单项最优改成组合成本，中档排第一。</p>
+              </li>
+            </ol>
+          </div>
+          <div class="card" style="padding:var(--sp-4)">
+            <h3 style="font-size:var(--fs-4);margin-bottom:var(--sp-3)">标签索引</h3>
+            <div class="tags-index">
+              <a href="/#deep">长枪枪管长度<small>11</small></a>
+              <a href="/#picks">点射手感记录<small>8</small></a>
+              <a href="/#updates">版本补丁对照<small>6</small></a>
+              <a href="/#guide">后坐力控制<small>5</small></a>
+              <a href="/#rank">配件三档取舍<small>9</small></a>
+              <a href="/#news">中距离对枪<small>4</small></a>
+              <a href="/#comments">直播问答存档<small>7</small></a>
+              <a href="/#faq">开镜速度实测<small>3</small></a>
+              <a href="/#deep">枪口与握把组合<small>5</small></a>
+              <a href="/#timeline">改口记录<small>3</small></a>
+            </div>
+            <div class="callout" style="margin-top:var(--sp-3)">标签后的数字是该主题下可核对的条目数，与频道索引的 9 个频道不完全对应：一个频道可以包含多个标签，一个标签也可能跨两个频道。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 创作者证言 -->
+      <section class="block" id="voices">
+        <div class="block-head">
+          <h2>创作者证言：为什么反复修结论</h2>
+          <span class="h2-sub">两条摘录 · 保留原措辞</span>
+        </div>
+        <div class="quotes">
+          <div class="quote">
+            <p>“10 月 18 日那天热修刚上，我打完 12 组就直接开播了，话说满了。11 月 2 日重看录屏，前 3 发的落点变化最明显，后面几发和之前差不多。改口这件事，比坚持原来的说法更省事。”</p>
+            <cite>—— 11 月 2 日图文，修订说明段</cite>
+          </div>
+          <div class="quote">
+            <p>“第三档不垫底，这个说法我保留。它没说最好，只说两项都不落在最后。要把它读成推荐，那是读者自己的推论，不是表里的结论。”</p>
+            <cite>—— 10 月 26 日直播，第 27 分钟</cite>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="sidebar" aria-label="侧栏导航">
+      <div class="panel">
+        <h3>栏目导航</h3>
+        <nav class="side-nav" id="sideNav" aria-label="页内导航">
+          <a href="/#overview">账号概览</a>
+          <a href="/#picks">精选条目</a>
+          <a href="/#updates">更新日志</a>
+          <a href="/#channels">频道索引</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#comments">读者评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rank">条目榜单</a>
+          <a href="/#timeline">时间线</a>
+          <a href="/#voices">创作者证言</a>
+        </nav>
+      </div>
+      <div class="panel">
+        <h3>快速核对</h3>
+        <div class="factbox">
+          <div class="fb-h">三份主材料</div>
+          <ul>
+            <li>L-28 · 10-11 对照表 v1</li>
+            <li>L-31 · 10-18 回调说明</li>
+            <li>L-42 · 11-06 三档取舍</li>
+          </ul>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-top:10px">数据截止 11 月 8 日。条目编号由作者自建，非平台官方编号。</p>
+      </div>
+      <div class="panel">
+        <h3>相关推荐</h3>
+        <div class="tags-index">
+          <a href="/#deep">长枪枪管长度</a>
+          <a href="/#picks">点射手感记录</a>
+          <a href="/#rank">配件三档取舍</a>
+          <a href="/#news">中距离对枪</a>
+          <a href="/#faq">开镜速度实测</a>
+          <a href="/#guide">后坐力控制</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 40 40" role="img" aria-label="折线与枪管标识">
+            <rect width="40" height="40" rx="10" fill="#1e293b"/>
+            <path d="M8 28 L14 12 L18 22 L22 15 L26 28 Z" fill="#38bdf8"/>
+            <rect x="27" y="10" width="3" height="20" rx="1.5" fill="#e11d48"/>
+          </svg>
+          <b>推特大神_-_我的枪好长阿</b>
+        </div>
+        <p>把长枪的长度、配件与补丁变化拆成可回查的条目，每条带日期与编号。</p>
+      </div>
+      <div>
+        <h4>阅读入口</h4>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#rank">条目榜单</a>
+        <a href="/#timeline">时间线</a>
+      </div>
+      <div>
+        <h4>频道</h4>
+        <a href="/#channels">长枪枪管长度</a>
+        <a href="/#channels">点射手感记录</a>
+        <a href="/#channels">版本补丁对照</a>
+        <a href="/#channels">配件三档取舍</a>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">读者评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#voices">创作者证言</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>示例数据说明：条目编号、直播时长、靶场记录均为示例整理，日期落在 2026-10-09 至 2026-11-08 之间。页脚更新时间 2026-11-08，对应正文更新日志末条与榜单第 10 期。</span>
+      <span>© 2026 推特大神_-_我的枪好长阿 · 内容索引</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  menuBtn.addEventListener('click', function(){
+    var open = mainNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.setAttribute('aria-label', open ? '关闭导航菜单' : '打开导航菜单');
+  });
+  mainNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 760){
+      mainNav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.setAttribute('aria-label','打开导航菜单');
+    }
+  });
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 滚动高亮
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('#mainNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function setActive(id){
+    sideLinks.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '/#' + id);
+    });
+    navLinks.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '/#' + id);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ setActive(en.target.id); }
+      });
+    }, {rootMargin:'-30% 0px -60% 0px', threshold:0});
+    targets.forEach(function(el){ io.observe(el); });
+  }
+
+  // 本地搜索
+  var input = document.getElementById('searchInput');
+  var result = document.getElementById('searchResult');
+  var index = Array.prototype.slice.call(document.querySelectorAll('main h2, main h3, main summary, .channels a, .tags-index a'));
+  var data = index.map(function(el){
+    var a = el.closest('a');
+    var sec = el.closest('section, aside');
+    var id = sec ? sec.id : '';
+    var href = a ? a.getAttribute('href') : (id ? '/#' + id : '/#top');
+    var text = el.textContent.replace(/\s+/g,' ').trim();
+    return {text:text, href:href};
+  }).filter(function(o, i, arr){
+    return o.text && arr.findIndex(function(x){return x.text === o.text && x.href === o.href;}) === i;
+  });
+
+  function render(q){
+    var kw = q.trim().toLowerCase();
+    if(!kw){ result.classList.remove('show'); result.innerHTML=''; return; }
+    var hits = data.filter(function(o){ return o.text.toLowerCase().indexOf(kw) > -1; }).slice(0,8);
+    if(hits.length === 0){
+      result.innerHTML = '<div class="sr-none">没有找到与“' + q.replace(/[<>&]/g,'') + '”匹配的条目，试试“枪管”“后坐力”“三档”或“开镜”。</div>';
+    } else {
+      result.innerHTML = hits.map(function(o){
+        return '<a href="' + o.href + '">' + o.text + '</a>';
+      }).join('');
+    }
+    result.classList.add('show');
+  }
+  input.addEventListener('input', function(){ render(input.value); });
+  input.addEventListener('focus', function(){ if(input.value) render(input.value); });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-wrap')){ result.classList.remove('show'); }
+  });
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ result.classList.remove('show'); input.blur(); }
+    if(e.key === 'Enter'){
+      var first = result.querySelector('a');
+      if(first){ window.location.href = first.getAttribute('href'); result.classList.remove('show'); }
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"推特大神_-_我的枪好长阿",
+  "inLanguage":"zh-CN",
+  "description":"推特大神_-_我的枪好长阿的账号动向与内容索引，整理2026年11月8日前30天内的更新节点、图文与视频条目、粉丝互动和争议时间线。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"长枪枪管越长，射程一定越远吗？","acceptedAnswer":{"@type":"Answer","text":"在10月11日对照表里，4种长度的有效射程从24米递增到38米，但开镜时间也从0.22秒增加到0.34秒。射程递增成立，代价是进场变慢。"}},
+    {"@type":"Question","name":"10月热修的6%垂直后坐，影响的是哪一段？","acceptedAnswer":{"@type":"Answer","text":"12组点射里9组前3发落点比热修前更低，后3发差距不明显，主要影响起手预压位置。"}},
+    {"@type":"Question","name":"配件三档取舍里的中档，具体指哪几件？","acceptedAnswer":{"@type":"Answer","text":"指枪管第三档长度、握把中档、枪口中档的组合，对应开镜0.28秒、射程33米。"}},
+    {"@type":"Question","name":"点射手感和连发手感能混用同一套配件吗？","acceptedAnswer":{"@type":"Answer","text":"不太行。同一套中档配件点射落点收敛用4发，连发时后3发散布明显扩大。"}},
+    {"@type":"Question","name":"11月补丁之后，10月的对照表还用得上吗？","acceptedAnswer":{"@type":"Answer","text":"射程和开镜两项的相对关系没变，6%垂直后坐的数值需要按10月18日补录的12组数据修正。"}},
+    {"@type":"Question","name":"直播回放里哪一段最值得看？","acceptedAnswer":{"@type":"Answer","text":"第12分钟到第53分钟是9次换装的连续记录，第41分钟有关于长度与开镜时间的原话。"}},
+    {"@type":"Question","name":"条目编号L-28、L-31、L-42是什么关系？","acceptedAnswer":{"@type":"Answer","text":"L-28是10月11日对照表，L-31是10月18日回调说明，L-42是11月6日三档取舍，时间戳连续。"}},
+    {"@type":"Question","name":"枪口和握把的组合有什么常见坑？","acceptedAnswer":{"@type":"Answer","text":"枪口中档配握把高档时水平后坐改善有限，但换装次数增加到两次，被标成成本高、收益平。"}}
+  ]
+}
+</script>
+</body>
+  </html>
